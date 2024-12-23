@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ePortfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My ePortfolio</h1>
+        <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+        <p>Hello! I'm Kenjie Budlong, a Computer Science Student.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about"></section>
+        <section id="projects"></section>
+        <section id="contact"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kenjie Budlong. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a CS Student with a passion for Computer Science.</p>
+    <ul>
+        <li>Python</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+        <li>HTML5</li>
+        <li>C#</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>The study introduces a hybrid algorithm combining merge sort and a modified binary search to optimize searching and sorting for large datasets. Merge sort efficiently handles sorting, while the modified binary search improves search performance by checking the first, last, and middle elements in each iteration. Experiments show that this hybrid approach outperforms traditional methods (standard binary search + merge sort) in execution time and scalability. While focused on numeric, one-dimensional arrays, the algorithm demonstrates potential for enhancing data processing in applications requiring frequent sorting and searching.</p>
+        <p><img src="Project1.png" alt="Project 1 Screenshot"></p>
+        <a href="https://github.com/Kenjakou/Project-1.git">View on GitHub</a>
+    </div>
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>A project combining Laravel, a powerful PHP framework, with Bootstrap, a responsive front-end framework. It likely showcases a modern web application or serves as a starter template, integrating Laravel's backend capabilities with Bootstrap's sleek, mobile-friendly design components.</p>
+        <p><img src="Project2.png" alt="Project 2 Screenshot"></p>
+        <a href="https://github.com/Kenjakou/Budlong-Kenny.git">View on GitHub</a>
+    </div>
+    <div class="project">
+        <h3>Project 3</h3>
+        <p>This project Tower Defense game built with Unity. Players strategically place and upgrade towers to defend against waves of enemies, using unique tower abilities and earning points for successful defenses. Features include multiple tower types, enemy waves with increasing difficulty, tower upgrades, and a scoring system. Contributions are welcome to enhance gameplay, graphics, or mechanics!</p>
+        <img src="Project3.jpg" alt="Project 3 Screenshot">
+        <a href="https://github.com/Kenjakou/Project3.git">View on GitHub</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xnnqyqor" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
